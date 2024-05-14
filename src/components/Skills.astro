@@ -1,0 +1,62 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Full Stack</h2>
+		<p>Dans l'écosystème de développement, je me sens chez moi. De la construction de belles interfaces utilisateur avec React à la mise en place d'environnements de déploiement robustes avec Docker, en passant par l'optimisation des workflows grâce au DevOps, je suis toujours prêt à relever de nouveaux défis.  .</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Team Player</h2>
+		<p>Rien ne me motive plus que de travailler en équipe. Je crois fermement que la diversité des talents et des perspectives enrichit chaque projet..</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Strategy-Minded</h2>
+		<p>Dans chaque ligne de code que j'écris, je garde toujours à l'esprit la vision globale. Comprendre les objectifs à long terme et les besoins des utilisateurs est essentiel pour développer des solutions efficaces et durables. .</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
